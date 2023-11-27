@@ -1,0 +1,446 @@
+
+:root{
+    --blue :                #576BD8;
+    --green :               #5B9126;
+    --red :                 #AE4625;
+    --broun :               #C69C6D;
+    --bark-blue :           #3E1A61;
+    --have-gren :           #A2C3A6;   
+    
+    /* --contact :             #EE8515;
+    --login :               #CB7233;
+    --aboute :              #DB4E4D;
+
+    --schedule :            #5295C9;
+    --gallery :             #4E9A95;
+    --programs :            #8FB249;
+
+    --teacher :             #7E3B67;
+    --apply :               #AB3E8A;
+    --career :              #D74F83; */
+   
+   
+   
+    --contact :             #00FFFF;
+    --login :               #FF00FF;
+    --aboute :              #009245;
+
+    --schedule :            #0000FF;
+    --gallery :             #FF0000;
+    --programs :            #FCEE21;
+
+    --teacher :             #ED1E79;
+    --apply :               #00FF00;
+    --career :              #FBB03B;
+
+    --loc :                 #F7931E;
+    --vid-h :               #AF36FF;
+    --loc-h :               #8CC63F;
+
+    
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arab;
+
+}
+
+
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 90vh;
+    padding-top: 100px;
+    background-position: center;
+    
+}
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: -10;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.25s;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+
+
+
+
+@font-face{
+    font-family: arab;
+    src: url(../fonts/FFYaseer-Regular.ttf);
+}
+select{
+    color: white;
+    background-color: var(--career);
+    /* background-color: transparent; */
+    font-size: 15px;
+    font-weight:1000;
+    padding: 8px 5px ;
+    border-radius: 40%;
+    border: 0.5px solid var(--career);
+    font-style: italic;
+    text-decoration: none;
+    margin: 10px 30px 10px 30px;
+    cursor: pointer;
+    
+}
+.ar{
+    font-weight: 1000;
+    color:white;
+    background-color:var(--career);
+    
+    
+    
+}
+.en{
+    font-weight: 1000;
+    color: white;
+    background-color:var(--career);
+}
+select:hover{
+    background-color: transparent;
+    color: var(--career);
+    border: 0.5px solid var(--career);
+}
+.logo{
+    
+    font-family:arab;
+    font-size: 50px;
+}
+span0{
+    color: var(--bark-blue);
+}
+span1{
+    color: var(--red);
+}
+span2{
+    color: var(--broun);
+}
+span3{
+    color:var(--green);
+}
+span4{
+    color: var(--blue)  ;
+}
+
+
+.logo1{
+    color: var(--bark-blue);
+    font-family:arab;
+    
+    font-size: 50px;
+}
+span0{
+    color: var(--bark-blue);
+}
+span1{
+    color: var(--red);
+}
+span2{
+    color: var(--broun);
+}
+span3{
+    color:var(--green);
+}
+span4{
+    color: var(--blue)  ;
+}
+
+/* span11{
+    color: rgb(237, 147, 43);
+}
+span21{
+    color: rgb(34, 176, 48);
+}
+span31{
+    color: rgb(14, 81, 169);
+} */
+nav{
+    display: flex;
+    justify-content: space-between;
+    top: 0; left: 0;right: 0;
+    position: fixed;    
+    background-color:transparent;
+    background-origin: initial;
+    padding: 5px 0 10px 0;
+}
+nav  li{
+    
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 35px 0px 35px;
+    
+}
+nav li a{
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 1000;
+}
+.home{
+    background-image: url(../images/b.g.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+div a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 1000;
+}
+
+
+
+/*================== en div================== */
+
+
+.div1{
+    padding-top: 130px;
+    rotate: -20deg;
+    margin-right: 80%;
+    margin-left: 18%;
+   
+}
+.a1{
+    background-color: var(--schedule);
+    border-radius: 50%;
+    padding: 15px 58px;
+    
+
+}
+.a1:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--schedule);
+    color: var(--schedule);
+}
+
+
+.div2{
+    margin-top: -36px;
+    rotate: 20deg; 
+    direction: rtl;
+    margin-left: 80%;
+    margin-right: 20%;
+}
+.a2{
+    background-color: var(--teacher);
+
+    border-radius: 50%;
+    padding: 15px 47px;
+}
+.a2:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--teacher);
+    color: var(--teacher);
+}
+
+.div3{
+    margin-top: 15px;
+    rotate: -35deg;
+    margin-right: 91%;
+    margin-left: 9%;
+    margin-top: 75px;
+}
+.a3{
+    background-color: var(--gallery);
+    border-radius: 50%;
+    padding: 15px 47px;
+
+}
+.a3:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--gallery);
+    color: var(--gallery);
+}
+
+.div4{
+    margin-top: -38px;
+    rotate: 35deg; 
+    direction: rtl;
+    margin-left: 91%;
+    margin-right: 9%;
+}
+.a4{
+    background-color: var(--apply);
+    border-radius: 50%;
+    padding: 15px 59px;
+    
+}
+.a4:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--apply);
+    color: var(--apply);
+}
+
+.div5{
+    margin-top: 15px;
+    rotate: -60deg;
+    margin-right: 97%;
+    margin-left: 3%;
+    margin-top: 100px;
+}
+.a5{
+    background-color: var(--programs);
+    border-radius: 50%;
+    padding: 15px 19px;
+
+}
+.a5:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--programs);
+    color: var(--programs);
+}
+
+.div6{
+    margin-top: -36px;
+    rotate: 60deg; 
+    direction: rtl;
+    margin-left: 97%;
+    margin-right: 3%;
+}
+.a6{
+    background-color: var(--career);
+    border-radius: 50%;
+    padding: 15px 41px;
+}
+.a6:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--career);
+    color: var(--career);
+}
+.div7{
+    margin-top: -40px;
+    margin-left: 20%;
+    margin-right: 74%;
+    rotate: -35deg;
+    padding: 8px;
+    border-radius: 50%;
+    padding-left: 18px;
+    background-color: transparent;
+
+}
+.a7{
+    color: var(--loc);
+}
+.a7 i{
+    font-size: 50px;
+}
+.a7 i:hover{
+    color:var(--loc-h);
+}
+.div7:hover{
+    background-color: white;
+}
+
+.div8{
+    margin-top: -80px;
+    direction: rtl;
+    margin-right: 15.5%;
+    margin-left: 78.5%;
+    rotate: 50deg;
+    padding: 8px;
+    border-radius: 50%;
+    padding-left: 16px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+.a8{
+    color: var(--programs);
+}
+.a8 i{
+    font-size: 50px;
+}
+.a8 i:hover{
+    color: var(--vid-h);
+}
+.div8:hover{
+    background-color: white;
+}
+
+.div9{
+    margin-top: 120px;
+    margin-right: 70%;
+    margin-left: 30%;
+    rotate: 5deg;
+}
+.a9{
+    background-color: var(--contact);
+    border-radius: 50%;
+    padding: 15px 41px;
+}
+.a9:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--contact);
+    color: var(--contact);
+}
+
+.div10{
+    margin-top: -36px;
+    margin-right: 30%;
+    margin-left: 70%;
+    rotate: -5deg;
+    direction: rtl;
+
+}
+.a10{
+    background-color: var(--aboute);
+    border-radius: 50%;
+    padding: 15px 47px;
+}
+.a10:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--aboute);
+    color: var(--aboute);
+}
+
+.div11{
+    text-align: center;
+    margin-top: -10px;
+}
+.a11{
+    background-color: var(--login);
+    border-radius: 50%;
+    padding: 15px 50px;
+}
+.a11:hover{
+    background-color: transparent;
+    border: 0.5px solid var(--login);
+    color: var(--login);
+}
+
+
+
+
+/*================= ar div============= */

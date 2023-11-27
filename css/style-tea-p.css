@@ -1,0 +1,92 @@
+@import url(style.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/slider-bg.png);
+    background-size: cover;
+    background-color:aquamarine;
+    background-attachment: fixed;
+}
+
+/* .nav-iyem{
+    background-color: var(--sel);
+}
+.nav-iyem:hover{
+
+    background-color: transparent;
+    border: 0.5px solid var(--sel);
+    color:var(--sel);}
+select{
+    background-color: var(--apply);
+    border: var(--apply);
+}
+select:hover{
+    color: var(--apply);
+    border: 0.5px solid var(--apply);
+} */
+
+.dy{
+    width: 1147.5px;
+    height: 514px;
+    background-color: transparent;
+    margin-top: 66.5px;
+    margin-left: 73px;
+    border: 1px;
+    border-color: brown;
+    position: absolute;
+
+}
+
+textarea{
+    position: absolute;
+    padding: 30px;
+    min-height: 514px;
+    min-width: 700px;
+    /* margin-left: 322px; */
+    background-color:rgba(95, 158, 160, 0.347);
+    /* background: transparent; */
+    border:2px solid transparent;
+    /* border-radiu: 22px; */
+    resize: none;
+    overflow-y: auto;
+    border-radius: 0 25px 25px 0;
+    font-size: 25px;
+    direction:rtl;
+}
+textarea:hover{
+   background-color:transparent;
+   border: 2px solid red;
+}
+label{
+    position: absolute;
+    color: rgb(6, 82, 57);
+    margin-top:180px;
+    margin-left: 790px;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+}
+button{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 840px;
+    width: 180px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: brown;
+    border: none;
+    color: white;
+
+}
+button:hover{
+    background: transparent;
+    border: 2px solid brown;
+    color: brown;
+}

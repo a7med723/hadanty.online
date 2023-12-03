@@ -1,0 +1,165 @@
+@import url(style.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/disply_man.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+select{
+    color: white;
+    background-color: var(--man);
+    /* background-color: transparent; */
+    font-size: 15px;
+    font-weight:1000;
+    padding: 8px 5px ;
+    border-radius: 40%;
+    border: 0.5px solid var(--man);
+    font-style: italic;
+    text-decoration: none;
+    margin: 10px 30px 10px 30px;
+    cursor: pointer;
+    
+}
+.ar{
+    font-weight: 1000;
+    color:white;
+    background-color:var(--man);
+    
+    
+    
+}
+.en{
+    font-weight: 1000;
+    color: white;
+    background-color:var(--man);
+}
+select:hover{
+    background-color: transparent;
+    color: var(--man);
+    border: 0.5px solid var(--man);
+}
+.btnout{
+	margin-left:800px;
+	margin-top: 15px;
+	height: 30px;
+	width: 120px;
+	border-radius: 25px;
+	font-size: 20px;
+	text-align: center;
+	color:var(--man);
+	background-color:transparent ;
+	border:2px solid var(--man);
+}
+.btnout:hover{
+	background-color: var(--man);
+	color: white;
+
+}
+
+
+.logo{
+    font-size: 43px;
+}
+
+
+
+
+
+
+
+
+
+
+/* header section start */
+
+.header_section {
+	width: 100%;
+	float: right;
+}
+
+
+
+    
+
+.sidenav {
+	height:500px;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+    background-color: hsl(35, 100%, 55% ,0.9);
+	overflow-x: hidden;
+	/* transition: 0.5s ; */
+	padding-top: 100px;
+	text-align: center;
+    direction: rtl;
+    margin-left: 670px;
+    margin-top: 80px;
+    border-radius: 45px;
+
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	display: block;
+	transition: 0.3s;
+	letter-spacing: 5px;
+}
+.a{
+	margin-top: -30px;
+}
+.a a:hover{
+	background-color: var(--man);
+
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 29px;
+	right: 57px;
+	font-size: 36px;
+	padding: 0;
+}
+
+
+.header_taital_main {
+	display: flex;
+    direction: rtl;
+    margin-top: 120px;
+    margin-right: 100px;
+}
+
+.toggle_icon{
+    font-size: 30px;
+    color: hsl(35, 100%, 55% ,0.9);
+}
+
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hadanty</title>
+    <link rel="stylesheet" href="css/style-man-p.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+    <nav><li class="nav-item">
+        <a  class="logo" ><span0 data-transl="span0">MY </span0><span1 data-transl="span1">N</span1><span2 data-transl="span2">UR</span2><span3 data-transl="span3">SE</span3><span4 data-transl="span4">RY</span4></a>
+        <a  class="logo1" ><span4 data-transl="span01"></span4><span3 data-transl="span11"></span3><span2 data-transl="span21"></span2><span1 data-transl="span31"></span1><span0 data-transl="span41"></span0></a>
+    </li>
+        <button class="btnout" data-transl="signout">sign out</button>
+
+    <select class="nav-iyem">
+        <option class="ar" value="ar" data-transl="arabic"  selected>ع</option>
+        <option class="en" value="en" data-transl="english"  >En</option>
+    </select>
+    </nav>
+
+
+<div class="header_section">
+    <div class="container-fluid">
+        <div id="mySidenav" class="sidenav">
+            <a class="closebtn" id="close" onclick="closeNav()"><i class="fa-solid fa-close"></i></a>
+            <div class="a">
+            <a href="schedule.html" data-transl="sched">schedule</a>    
+            <a href="ad_sced.html" data-transl="ad_sced">ad schedule</a>    
+            <a href="evaluation.html" data-transl="eval">evaluation</a> 
+            <a href="teachers.html" data-transl="teach">teachers</a>    
+            <a href="gallary.html" data-transl="gal">gallary</a>        
+            <a href="apply.html" data-transl="apl">apply</a>            
+            <a href="aboute.html" data-transl="abou" >aboute</a>        
+            </div>
+        </div>
+        <div class="header_taital_main">
+            <span class="toggle_icon" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            <div><span class="menu" onclick="openNav()">Menu</span></div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "45%";
+}
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script src="js/trans.js"></script>
+</body>
+</html>

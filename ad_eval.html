@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style-ad-ev.css">
+</head>
+<body>
+
+
+    <nav><li class="nav__item">
+        <a  class="logo" ><span0 data__transl="span0">MY </span0><span1 data__transl="span1">N</span1><span2 data__transl="span2">UR</span2><span3 data__transl="span3">SE</span3><span4 data__transl="span4">RY</span4></a>
+        <a  class="logo1" ><span4 data__transl="span01"></span4><span3 data__transl="span11"></span3><span2 data__transl="span21"></span2><span1 data__transl="span31"></span1><span0 data__transl="span41"></span0></a>
+    </li>
+    <select class="nav__iyem">
+        <option class="ar" value="ar" data__transl="arabic"  selected>ع</option>
+        <option class="en" value="en" data__transl="english"  >En</option>
+    </select>
+    </nav>
+    <p class="eavl">evaluations</p>
+    <div class="board1"></div>
+
+    <div class="board2">
+        <div class="f_br1">
+            <button onclick="passData1()">1</button> <input type="text" id="in1">
+            <button onclick="passData2()">2</button> <input type="text" id="in2">
+            <button onclick="passData3()">3</button> <input type="text" id="in3">
+            <button onclick="passData4()">4</button> <input type="text" id="in4">
+            <button onclick="passData5()">5</button> <input type="text" id="in5">
+            <button onclick="passData6()">6</button> <input type="text" id="in6">
+            <button onclick="passData7()">7</button> <input type="text" id="in7">
+            <button onclick="passData8()">8</button> <input type="text" id="in8">
+            <button onclick="passData9()">9</button> <input type="text" id="in9">
+            <button onclick="passData10()">10</button><input type="text" id="in10">
+            <button onclick="passData11()">11</button><input type="text" id="in11">
+            <button onclick="passData12()">12</button><input type="text" id="in12">
+            <button onclick="passData13()">13</button><input type="text" id="in13">
+            <button onclick="passData14()">14</button><input type="text" id="in14">
+            <button onclick="passData15()">15</button><input type="text" id="in15">
+            <button onclick="passData16()">16</button><input type="text" id="in16">
+            <button onclick="passData17()">17</button><input type="text" id="in17">
+            <button onclick="passData18()">18</button><input type="text" id="in18">
+            <button onclick="passData19()">19</button><input type="text" id="in19">
+            <button onclick="passData20()">20</button><input type="text" id="in20">
+        </div>
+        <div class="f_br2">
+            <p id="oput1">1</p>
+            <p id="oput2">1</p>
+            <p id="oput3">1</p>
+            <p id="oput4">1</p>
+            <p id="oput5">1</p>
+            <p id="oput6">1</p>
+            <p id="oput7">1</p>
+            <p id="oput8">1</p>
+            <p id="oput9">1</p>
+            <p id="oput10">1</p>
+            <p id="oput11">1</p>
+            <p id="oput12">1</p>
+            <p id="oput13">1</p>
+            <p id="oput14">1</p>
+            <p id="oput15">1</p>
+            <p id="oput16">1</p>
+            <p id="oput17">1</p>
+            <p id="oput18">1</p>
+            <p id="oput19">1</p>
+            <p id="oput20">1</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+// ----- for output ------//
+    var passedValue__1 = localStorage.getItem("mValue1");
+    document.getElementById("oput1").innerText = passedValue__1;
+    var passedValue__2 = localStorage.getItem("mValue2");
+    document.getElementById("oput2").innerText = passedValue__2;
+    var passedValue__3 = localStorage.getItem("mValue3");
+    document.getElementById("oput3").innerText = passedValue__3;
+    var passedValue__4 = localStorage.getItem("mValue4");
+    document.getElementById("oput4").innerText = passedValue__4;
+    var passedValue__5 = localStorage.getItem("mValue5");
+    document.getElementById("oput5").innerText = passedValue__5;
+    var passedValue__6 = localStorage.getItem("mValue6");
+    document.getElementById("oput6").innerText = passedValue__6;
+    var passedValue__7 = localStorage.getItem("mValue7");
+    document.getElementById("oput7").innerText = passedValue__7;
+    var passedValue__8 = localStorage.getItem("mValue8");
+    document.getElementById("oput8").innerText = passedValue__8;
+    var passedValue__9 = localStorage.getItem("mValue9");
+    document.getElementById("oput9").innerText = passedValue__9;
+    var passedValue__10 = localStorage.getItem("mValue10");
+    document.getElementById("oput10").innerText = passedValue__10;
+    var passedValue__11 = localStorage.getItem("mValue11");
+    document.getElementById("oput11").innerText = passedValue__11;
+    var passedValue__12 = localStorage.getItem("mValue12");
+    document.getElementById("oput12").innerText = passedValue__12;
+    var passedValue__13 = localStorage.getItem("mValue13");
+    document.getElementById("oput13").innerText = passedValue__13;
+    var passedValue__14 = localStorage.getItem("mValue14");
+    document.getElementById("oput14").innerText = passedValue__14;
+    var passedValue__15 = localStorage.getItem("mValue15");
+    document.getElementById("oput15").innerText = passedValue__15;
+    var passedValue__16 = localStorage.getItem("mValue16");
+    document.getElementById("oput16").innerText = passedValue__16;
+    var passedValue__17 = localStorage.getItem("mValue17");
+    document.getElementById("oput17").innerText = passedValue__17;
+    var passedValue__18 = localStorage.getItem("mValue18");
+    document.getElementById("oput18").innerText = passedValue__18;
+    var passedValue__19 = localStorage.getItem("mValue19");
+    document.getElementById("oput19").innerText = passedValue__19;
+    var passedValue__20 = localStorage.getItem("mValue20");
+    document.getElementById("oput20").innerText = passedValue__20;
+
+
+
+
+
+
+
+// ----- for input ------//
+
+        function passData1(){
+            var idvalueToPass__1 = document.getElementById("in1").value;
+            localStorage.setItem("mValue1", idvalueToPass__1);
+            window.location.href = "evaluation.html";
+        }
+        function passData2(){
+            var idvalueToPass__2 = document.getElementById("in2").value;
+            localStorage.setItem("mValue2", idvalueToPass__2);
+            window.location.href = "evaluation.html";
+        }
+        function passData3(){
+            var idvalueToPass__3 = document.getElementById("in3").value;
+            localStorage.setItem("mValue3", idvalueToPass__3);
+            window.location.href = "evaluation.html";
+        }
+        function passData4(){
+            var idvalueToPass__4 = document.getElementById("in4").value;
+            localStorage.setItem("mValue4", idvalueToPass__4);
+            window.location.href = "evaluation.html";
+        }
+        function passData5(){
+            var idvalueToPass__5 = document.getElementById("in5").value;
+            localStorage.setItem("mValue5", idvalueToPass__5);
+            window.location.href = "evaluation.html";
+        }
+        function passData6(){
+            var idvalueToPass__6 = document.getElementById("in6").value;
+            localStorage.setItem("mValue6", idvalueToPass__6);
+            window.location.href = "evaluation.html";
+        }
+        function passData7(){
+            var idvalueToPass__7 = document.getElementById("in7").value;
+            localStorage.setItem("mValue7", idvalueToPass__7);
+            window.location.href = "evaluation.html";
+        }
+        function passData8(){
+            var idvalueToPass__8 = document.getElementById("in8").value;
+            localStorage.setItem("mValue8", idvalueToPass__8);
+            window.location.href = "evaluation.html";
+        }
+        function passData9(){
+            var idvalueToPass__9 = document.getElementById("in9").value;
+            localStorage.setItem("mValue9", idvalueToPass__9);
+            window.location.href = "evaluation.html";
+        }
+        function passData10(){
+            var idvalueToPass__10 = document.getElementById("in10").value;
+            localStorage.setItem("mValue10", idvalueToPass__10);
+            window.location.href = "evaluation.html";
+        }
+        function passData11(){
+            var idvalueToPass__11 = document.getElementById("in11").value;
+            localStorage.setItem("mValue11", idvalueToPass__11);
+            window.location.href = "evaluation.html";
+        }
+        function passData12(){
+            var idvalueToPass__12 = document.getElementById("in12").value;
+            localStorage.setItem("mValue12", idvalueToPass__12);
+            window.location.href = "evaluation.html";
+        }
+        function passData13(){
+            var idvalueToPass__13 = document.getElementById("in13").value;
+            localStorage.setItem("mValue13", idvalueToPass__13);
+            window.location.href = "evaluation.html";
+        }
+        function passData14(){
+            var idvalueToPass__14 = document.getElementById("in14").value;
+            localStorage.setItem("mValue14", idvalueToPass__14);
+            window.location.href = "evaluation.html";
+        }
+        function passData15(){
+            var idvalueToPass__15 = document.getElementById("in15").value;
+            localStorage.setItem("mValue15", idvalueToPass__15);
+            window.location.href = "evaluation.html";
+        }
+        function passData16(){
+            var idvalueToPass__16 = document.getElementById("in16").value;
+            localStorage.setItem("mValue16", idvalueToPass__16);
+            window.location.href = "evaluation.html";
+        }
+        function passData17(){
+            var idvalueToPass__17 = document.getElementById("in17").value;
+            localStorage.setItem("mValue17", idvalueToPass__17);
+            window.location.href = "evaluation.html";
+        }
+        function passData18(){
+            var idvalueToPass__18 = document.getElementById("in18").value;
+            localStorage.setItem("mValue18", idvalueToPass__18);
+            window.location.href = "evaluation.html";
+        }
+        function passData19(){
+            var idvalueToPass__19 = document.getElementById("in19").value;
+            localStorage.setItem("mValue19", idvalueToPass__19);
+            window.location.href = "evaluation.html";
+        }
+        function passData20(){
+            var idvalueToPass__20 = document.getElementById("in20").value;
+            localStorage.setItem("mValue20", idvalueToPass__20);
+            window.location.href = "evaluation.html";
+        }
+    </script>
+</body>
+</html>

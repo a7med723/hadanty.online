@@ -1,0 +1,390 @@
+
+:root{
+    --blue :                #576BD8;
+    --green :               #5B9126;
+    --red :                 #AE4625;
+    --broun :               #C69C6D;
+    --bark-blue :           #3E1A61;
+    --have-gren :           #A2C3A6;   
+    
+    /* --contact :             #EE8515;
+    --login :               #CB7233;
+    --aboute :              #DB4E4D;
+
+    --schedule :            #5295C9;
+    --gallery :             #4E9A95;
+    --programs :            #8FB249;
+
+    --teacher :             #7E3B67;
+    --apply :               #AB3E8A;
+    --career :              #D74F83; */
+   
+   
+   
+    --contact :             #00FFFF;
+    --login :               #FF00FF;
+    --aboute :              #009245;
+
+    --schedule :            #0000FF;
+    --gallery :             #FF0000;
+    --programs :            #FCEE21;
+
+    --teacher :             #ED1E79;
+    --apply :               #00FF00;
+    --career :              #FBB03B;
+
+    --loc :                 #F7931E;
+    --vid-h :               #AF36FF;
+    --loc-h :               #8CC63F;
+
+    --tea :                 #FFA017;
+    --man :                 #62ACA7;
+
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arab;
+
+}
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgb(255, 255, 255);
+    z-index: 1001;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 90vh;
+    padding-top: 100px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: -10;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.25s;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@font-face{
+    font-family: arab;
+    src: url(../fonts/FFYaseer-Regular.ttf);
+}
+.home{
+    position: absolute;
+    background-image: url(../images/b.g.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+select{
+    color: white;
+    background-color: var(--career);
+    /* background-color: transparent; */
+    font-size: 15px;
+    font-weight:1000;
+    padding: 8px 5px ;
+    border-radius: 40%;
+    border: 0.5px solid var(--career);
+    font-style: italic;
+    text-decoration: none;
+    margin: 10px 30px 10px 30px;
+    cursor: pointer;
+    
+}
+.ar{
+    font-weight: 1000;
+    color:white;
+    background-color:var(--career);
+    
+    
+    
+}
+.en{
+    font-weight: 1000;
+    color: white;
+    background-color:var(--career);
+}
+select:hover{
+    background-color: transparent;
+    color: var(--career);
+    border: 0.5px solid var(--career);
+}
+.logo{
+    
+    font-family:arab;
+    font-size: 43px;
+}
+span0{
+    color: var(--bark-blue);
+}
+span1{
+    color: var(--red);
+}
+span2{
+    color: var(--broun);
+}
+span3{
+    color:var(--green);
+}
+span4{
+    color: var(--blue)  ;
+}
+
+
+.logo1{
+    color: var(--bark-blue);
+    font-family:arab;
+    
+    font-size: 43px;
+}
+span0{
+    color: var(--bark-blue);
+}
+span1{
+    color: var(--red);
+}
+span2{
+    color: var(--broun);
+}
+span3{
+    color:var(--green);
+}
+span4{
+    color: var(--blue)  ;
+}
+
+/* span11{
+    color: rgb(237, 147, 43);
+}
+span21{
+    color: rgb(34, 176, 48);
+}
+span31{
+    color: rgb(14, 81, 169);
+} */
+nav{
+    display: flex;
+    justify-content: space-between;
+    top: 0; left: 0;right: 0;
+    position: fixed;    
+    background-color:transparent;
+    background-origin: initial;
+    padding: 5px 0 10px 0;
+    z-index: 1000;
+}
+nav  li{
+    
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 35px 0px 35px;
+    
+}
+.btnout{
+	margin-left:800px;
+	margin-top: 15px;
+	height: 30px;
+	width: 120px;
+	border-radius: 25px;
+	font-size: 20px;
+	text-align: center;
+	color:var(--man);
+	background-color:transparent ;
+	border:2px solid var(--man);
+}
+.btnout:hover{
+	background-color: var(--man);
+	color: white;
+
+}
+nav li a{
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+button{
+    width: 14%;
+    height: 70px;
+    border-radius: 49%;
+    color: white;
+    font-size: 30px;
+    font-weight: 1000;
+    border: 0;
+}
+
+.div1{
+    margin-top: 6%;
+}
+.div2{
+    margin-top: 1.5%;
+}
+.div3{
+    margin-top: 5%;
+}
+.div4{
+    margin-left: 5%;
+}
+.div5{
+    margin-top: 6.5%;
+}
+.div6{
+    margin-top: -3.5%;
+}
+
+
+
+.btn1{
+    background-color: var(--schedule);
+    margin-right: 20%;
+    rotate: -17deg;
+}
+.btn1:hover{
+    border: 1px solid var(--schedule);
+    color: var(--schedule);
+    background: transparent;
+}
+.btn2{
+    background-color: var(--teacher);
+    rotate: 17deg;
+}
+.btn2:hover{
+    border: 1px solid var(--teacher);
+    color: var(--teacher);
+    background: transparent;
+}
+.btn3{
+    background-color: var(--gallery);
+    margin-right: 46%;
+    rotate: -35deg;
+}
+.btn3:hover{
+    border: 1px solid var(--gallery);
+    color: var(--gallery);
+    background: transparent;
+}
+.btn4{
+    background-color: var(--apply);
+    rotate: 35deg;
+
+}
+.btn4:hover{
+    border: 1px solid var(--apply);
+    color: var(--apply);
+    background: transparent;
+}
+.btn5{
+    background-color: var(--programs);
+    margin-right: 67%;
+    rotate: -52deg;
+}
+.btn5:hover{
+    border: 1px solid var(--programs);
+    color: var(--programs);
+    background: transparent;
+}
+.btn6{
+    background-color: var(--career);
+    rotate: 52deg;
+
+}
+.btn6:hover{
+    border: 1px solid var(--career);
+    color: var(--career);
+    background: transparent;
+}
+.btn7{
+    background-color: transparent;  
+    margin-right: 53%;
+    rotate: -40deg;
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+}
+.btn7:hover {
+    background-color: white;
+}
+.btn7 i{
+    color: var(--loc);
+    font-size: 50px;
+}
+.btn7 i:hover{
+    color:var(--loc-h);
+}
+.btn8{
+    background-color:transparent;
+    rotate: 40deg;
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+}
+.btn8:hover{
+    background-color: white;
+}
+.btn1:hover{
+    border: 1px solid var(--schedule);
+    color: var(--schedule);
+    background: transparent;
+}
+.btn8 i{
+    color: var(--programs);
+    font-size: 50px;
+}
+.btn8 i:hover{
+    color: var(--vid-h);
+}
+.btn9{
+    background-color: var(--contact);
+    margin-right: 15%;
+    rotate: 5deg;
+}
+.btn9:hover{
+    border: 1px solid var(--contact);
+    color: var(--contact);
+    background: transparent;
+}
+.btn10{
+    background-color: var(--aboute);
+    rotate: -5deg;
+}
+.btn10:hover{
+    border: 1px solid var(--aboute);
+    color: var(--aboute);
+    background: transparent;
+}
+.btn11{
+    background-color: var(--login);
+}
+.btn11:hover{
+    border: 1px solid var(--login);
+    color: var(--login);
+    background: transparent;
+}

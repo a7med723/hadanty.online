@@ -1,0 +1,146 @@
+
+@import url(style.css);
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+
+    background: url(../images/back7.png);
+    background-size: cover;
+}
+nav{
+    z-index: 100;
+}
+
+p{
+    font-size: 30px;
+    color: rgba(240, 248, 255, 0.76);
+}
+.p2{
+    text-align: center;
+    font-size: 60px;
+    color:rgba(240, 248, 255, 0.76);
+    font-weight: 900;
+    letter-spacing: 8px;
+    margin-top: 115px;
+    margin-left: 500px;
+    position: absolute;
+    letter-spacing: 20px;
+
+
+}
+
+
+
+
+.dv{
+    z-index: 100;
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-left: 224px;
+    margin-top: 180px;
+    padding: 0;
+}
+input{
+    width: 136px;
+    height: 59px;
+    background: transparent;
+    border: 0;
+
+    font-size: 25px;
+    color: aliceblue;
+    padding: 0 20px;
+    margin: 0;
+
+}
+.par0{
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.par1{
+    position: absolute;
+    width: 170px;
+    margin-left: 100px;
+    margin-left: 680px;
+    display: grid;
+}
+.par2{
+    position: absolute;
+    width: 170px;
+    margin-left: 100px;
+    margin-left: 680px;
+    display: grid;
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.par3{
+    position: absolute;
+    width: 170px;
+    margin-left: 100px;
+    margin-left: 680px;
+    display: grid;
+    margin-top: 120px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.par4{
+    position: absolute;
+    width: 170px;
+    margin-left: 100px;
+    margin-left: 680px;
+    display: grid;
+    margin-top: 180px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.par5{
+    position: absolute;
+    width: 170px;
+    margin-left: 100px;
+    margin-left: 680px;
+    display: grid;
+    margin-top: 240px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.par6{
+    position: absolute;
+    width: 170px;
+    margin-left: 100px;
+    margin-left: 680px;
+    display: grid;
+    margin-top: 300px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.sub{
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 120px;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    border: 2px solid rgba(240, 248, 255, 0.76);
+    background: transparent;
+    font-size: 50px;
+    color: rgba(240, 248, 255, 0.76);
+    font-weight: 900;
+    z-index: 1000;
+
+}
+.sub:hover{
+    background-color: rgba(240, 248, 255, 0.76);
+    color: rgba(0, 0, 0, 0.658);
+    border: none;
+
+}
+.sub:active{
+    transform: scale(0.9);
+}
+
+

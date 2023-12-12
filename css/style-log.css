@@ -1,0 +1,170 @@
+@import url(style.css);
+:root{
+    --apply:            #8FB249;
+    --sel :            #5295C9;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/slider-bg-3.png);
+    background-size: cover;
+    background-color:var(--apply);
+    background-attachment: fixed;
+    text-align: center;
+}
+.container{
+
+    position: fixed;    
+    width: 900px;
+    height: 100%;
+    padding: 32px;
+    overflow: hidden;
+    margin-top: 80px;
+
+}
+
+
+
+
+form{
+
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    margin: -10px 400px 0 400px;
+    padding-top:10px ;
+
+}
+
+
+.title{
+
+    color:var(--apply);
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.input-container{
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--apply);
+    color: var(--apply);
+    background: none;
+    padding: 0.6rem 6rem;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.input-container label{
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: var(--apply);
+    font-size: 25px;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.sub{
+    width: 350px;
+    height: 50px;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 30px;
+    background:var(--apply);
+    background: transparent;
+    border: 4px solid transparent;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1000;
+}
+.sub:hover{
+    background: transparent;
+    border: 4px solid var(--apply);
+}
+
+.input-container span{
+    position: absolute;
+    top: 0;
+    left: 1px;
+    transform: translateY(-48%);
+    font-size: 0,8rem;
+    padding: 0 10px;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+
+.input-container span::before,
+.input-container span::after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-55%);
+    background: white;
+}
+
+.input-container span::before{
+    left: 60%;
+}
+.input-container span::after{
+    left: 120%;
+    border-radius: 15px;
+}
+.input-container.focus label{
+    top: 0;
+    transform: translateY(-60%);
+    font-size: 20px;
+}
+.input-container.focus span::before,
+.input-container.focus span::after{
+    width: 62%;
+    opacity: 1;
+}
+.a{
+    margin-top: 70px;
+}
+.b{
+    margin-top: 60px;
+}
+
+.p1{
+    margin-top: -55px;
+    color:var(--apply);
+    font-size: 40px;
+}
+.radio{
+    margin-top: 20px;
+    color:var(--apply);
+    font-size: 25px;
+}

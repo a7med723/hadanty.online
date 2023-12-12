@@ -1,0 +1,122 @@
+@import url(style.css);
+:root{
+--apply:            #8FB249;
+--sel :            #5295C9;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/slider-bg.png);
+    background-size: cover;
+    background-color:var(--apply);
+    align-items: center;
+    text-align: center;
+}
+
+
+.form-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 500px ;
+    margin-left:90px;
+    margin-top: 70px;
+}
+
+.form-group{
+    position: relative;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.title{
+    margin-top: 90px;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: var(--apply);
+    
+}
+
+label{
+    position: absolute;
+    top :50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    text-transform:capitalize ;
+    color: var(--lableColor);
+    padding: 0 .5rem;
+    pointer-events: none;
+    transition: all .5s ease;
+    left: 2.5rem;
+    color: #80a23c;
+}
+
+
+input{
+    width: 110%;
+    height: 45px;
+    padding: 0 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid #80a23c;
+    font-size: 1.6rem;
+    color: #678330;
+    background: transparent;
+}
+.input_select{
+    width: 110%;
+    height: 45px;
+    padding: 0 15px;
+    margin: 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    border: 2px solid #80a23c;
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #678330;
+    background: transparent;
+}
+.input_select:hover{
+    border:2px solid var(--apply);
+    color: var(--apply);
+}
+input:focus~label,
+input:valid~label{
+    top: 0 !important;
+    font-size: 1.2rem !important;
+    background-color: rgba(254, 255, 255, 0.99);
+    padding:0 2px;
+    border-radius: 25px;
+    height: 20px;
+}
+
+.btn{
+    position: absolute;
+    margin-top:360px ;
+    margin-left: -185px;
+    width: 385px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: var(--apply);
+    border: none;
+    font-size: 35px;
+    font-weight: 900;
+    color: aliceblue;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid var(--apply);
+    color: var(--apply);
+}
+
